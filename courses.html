@@ -11,19 +11,19 @@
 
     <style>
         ::-webkit-scrollbar {
-          width: 0.5em;
+          width: 0.2em;
           background-color: lightgray;
         }
     
         ::-webkit-scrollbar-thumb {
-          background-color: grey;
-          border-radius: 20px;
+          background-color: rgb(0, 0, 0);
+          border-radius: 50px;
         }
       </style>
 </head>
-<body class="bg-gradient-to-r from-white to-blue-200">
+<body class=" md:bg-gradient-to-r from-white to-blue-500">
      <!-- Code for navbar -->
-     <nav class="bg-white px-5 py-1">
+     <nav class="bg-white px-5 md:py-0 py-2 border md:border-none">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4">
             <a href="homepage.html" class="flex items-center">
                 <span class="self-center text-2xl font-bold font-mono">Speed Coder <span class="text-blue-600">Parth</span></span>
@@ -41,67 +41,158 @@
                     </li>
                     
                     <li>
-                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar1" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded md:border-0 md:hover:text-blue-600 font-sans font-bold">Courses 
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar1" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-blue-600 rounded md:border-0 md:hover:text-blue-600 font-sans font-bold">Courses 
                             <svg class="w-5 h-5 ml-1 mt-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                             </svg>
                         </button>
                         <!-- Dropdown menu -->
                     <div id="dropdownNavbar1" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                  <ul class="border rounded-lg py-2 text-sm font-semibold text-gray-700" aria-labelledby="dropdownLargeButton">
-                  <li>
-                      <a href="courses.html" class="block px-4 py-2 hover:bg-gray-100">DSA</a>
-                  </li>
-                  <li>
-                      <a href="courses.html" class="block px-4 py-2 hover:bg-gray-100">Web Dev</a>
-                  </li>
-                  </ul>
-              </div>
-          </li>
-          <li>
-              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded md:border-0 md:hover:text-blue-600 font-sans font-bold">Resources 
-                  <svg class="w-5 h-5 ml-1 mt-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                  </svg>
-                </button>
-                <!-- Dropdown menu -->
-                <div id="dropdownNavbar2" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
-                    <ul class="border rounded-lg py-2 text-sm font-semibold text-gray-700" aria-labelledby="dropdownLargeButton">
-                    <li>
-                        <a href="courses.html" class="block px-4 py-2 hover:bg-gray-100">Notes</a>
-                    </li>
+                        <ul class="border rounded-lg py-2 text-sm font-semibold text-gray-700" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="courses.html" class="block px-4 py-2 hover:bg-gray-100">DSA</a>
+                            </li>   
+                            <li>
+                                <a href="courses.html" class="block px-4 py-2 hover:bg-gray-100">Web Dev</a>
+                            </li>
+                        </ul>
+                    </div>
                     
-                    <li>
-                      <a href="courses.html" class="block px-4 py-2 hover:bg-gray-100">Books</a>
                     </li>
-                    </ul>
-              </div>
-          </li>
+                 <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded md:border-0 md:hover:text-blue-600 font-sans font-bold">Resources 
+                        <svg class="w-5 h-5 ml-1 mt-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar2" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                        <ul class="border rounded-lg py-2 text-sm font-semibold text-gray-700" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="courses.html" class="block px-4 py-2 hover:bg-gray-100">Notes</a>
+                            </li>
+                    
+                            <li>
+                                <a href="courses.html" class="block px-4 py-2 hover:bg-gray-100">Books</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
           
-          </ul>
-      </div>
-      </div>
-  </nav>
+                </ul>
+            </div>
+            </div>
+    </nav>
 
       
-      <div class="flex-wrap md:flex md:justify-between space-y-5 md:space-x-1 px-10">
-        <div class="w-[50%]">
+      <div class="flex-wrap md:flex md:justify-between space-y-5 md:space-x-1 px-10 w-full h-[720px] md:border">
+        <div class="md:w-[60%] nd:pl-10">
             <div class="pt-5">
-                <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[5px] mt-10 rounded-t-xl h-[172px] max-w-[301px] md:h-[315px] md:max-w-[520px]">
+                <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[5px] mt-10 rounded-t-xl h-[172px] max-w-[280px] md:h-[315px] md:max-w-[520px]  shadow-2xl shadow-black">
                 <div class="rounded-lg overflow-hidden h-[156px] md:h-[300px] bg-black">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Sg8XVnCneXE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen  class="dark:hidden h-[250px] md:h-[300px] w-full rounded-xl" alt=""></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Sg8XVnCneXE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="hidden dark:block h-[250px] md:h-[300px] w-full rounded-lg"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Sg8XVnCneXE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen  class="dark:hidden h-[172px] md:h-[300px] w-full rounded-xl" alt=""></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Sg8XVnCneXE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="hidden dark:block h-[170px] md:h-[300px] w-full rounded-lg"></iframe>
                 </div>
             </div>
-            <div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[20px] md:max-w-[600px]">
-                <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
+            <div class="relative mx-auto bg-gray-700 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[11px] max-w-[351px] md:h-[15px] md:max-w-[600px] shadow-2xl shadow-black">
+                <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800  shadow-2xl shadow-black"></div>
             </div>
             </div>
         </div>
 
-        <div class="w-[45%] py-10">
-            <div class="border-2 rounded-2xl border-white h-[350px] w-full">
+        <div class="md:w-[35%] py-2">
+            <div class="border-2 rounded-2xl bg-blue-30 border-white md:h-[630px] h-[400px] w-full shadow-2xl shadow-black flex-col p-4">
+                <div class="w-full md:mb-4 md:pt-4">
+                    <h1 class="md:text-5xl text-2xl font-semibold font-mono md:text-white">Tutorials</h1>
+                </div>
 
+                <div class="border h-0.5 bg-white mb-4 rounded-2xl"></div>
+
+                <div class="border rounded-2xl flex-col space-y-1 p-2 md:h-[490px] h-[310px] shadow-md shadow-black">
+                    <div class="p-2 overflow-y-scroll space-y-2 md:h-[470px] h-[300px]">
+                        <div class="h-[80px] border rounded-md flex space-x-5 p-2">
+                            <div class="h-full w-[100px] bg-black rounded-md border border-black"></div>
+                            <div class="md:w-[75%] flex-col space-y-1">
+                                <p class="font-semibold md:text-white text-sm font-mono">This is a video</p>
+                                <p class="font-semibold bg-black rounded-md text-blue-600 text-sm md:w-[30%] pl-2">15 mins</p>
+                            </div>
+                        </div>
+    
+                        <div class="h-[80px] border rounded-md flex space-x-5 p-2">
+                            <div class="h-full w-[100px] bg-black rounded-md border border-black"></div>
+                            <div class="md:w-[75%] flex-col space-y-1">
+                                <p class="font-semibold md:text-white text-sm font-mono">This is a video</p>
+                                <p class="font-semibold bg-black rounded-md text-blue-600 text-sm md:w-[30%] pl-2">15 mins</p>
+                            </div>
+                        </div>
+    
+                        <div class="h-[80px] border rounded-md flex space-x-5 p-2">
+                            <div class="h-full w-[100px] bg-black rounded-md border border-black"></div>
+                            <div class="md:w-[75%] flex-col space-y-1">
+                                <p class="font-semibold md:text-white text-sm font-mono">This is a video</p>
+                                <p class="font-semibold bg-black rounded-md text-blue-600 text-sm md:w-[30%] pl-2">15 mins</p>
+                            </div>
+                        </div>
+    
+                        <div class="h-[80px] border rounded-md flex space-x-5 p-2">
+                            <div class="h-full w-[100px] bg-black rounded-md border border-black"></div>
+                            <div class="md:w-[75%] flex-col space-y-1">
+                                <p class="font-semibold md:text-white text-sm font-mono">This is a video</p>
+                                <p class="font-semibold bg-black rounded-md text-blue-600 text-sm md:w-[30%] pl-2">15 mins</p>
+                            </div>
+                        </div>
+    
+                        <div class="h-[80px] border rounded-md flex space-x-5 p-2">
+                            <div class="h-full w-[100px] bg-black rounded-md border border-black"></div>
+                            <div class="md:w-[75%] flex-col space-y-1">
+                                <p class="font-semibold md:text-white text-sm font-mono">This is a video</p>
+                                <p class="font-semibold bg-black rounded-md text-blue-600 text-sm md:w-[30%] pl-2">15 mins</p>
+                            </div>
+                        </div>
+    
+                        <div class="h-[80px] border rounded-md flex space-x-5 p-2">
+                            <div class="h-full w-[100px] bg-black rounded-md border border-black"></div>
+                            <div class="md:w-[75%] flex-col space-y-1">
+                                <p class="font-semibold md:text-white text-sm font-mono">This is a video</p>
+                                <p class="font-semibold bg-black rounded-md text-blue-600 text-sm md:w-[30%] pl-2">15 mins</p>
+                            </div>
+                        </div>
+    
+                        <div class="h-[80px] border rounded-md flex space-x-5 p-2">
+                            <div class="h-full w-[100px] bg-black rounded-md border border-black"></div>
+                            <div class="md:w-[75%] flex-col space-y-1">
+                                <p class="font-semibold md:text-white text-sm font-mono">This is a video</p>
+                                <p class="font-semibold bg-black rounded-md text-blue-600 text-sm md:w-[30%] pl-2">15 mins</p>
+                            </div>
+                        </div>
+    
+                        <div class="h-[80px] border rounded-md flex space-x-5 p-2">
+                            <div class="h-full w-[100px] bg-black rounded-md border border-black"></div>
+                            <div class="md:w-[75%] flex-col space-y-1">
+                                <p class="font-semibold md:text-white text-sm font-mono">This is a video</p>
+                                <p class="font-semibold bg-black rounded-md text-blue-600 text-sm md:w-[30%] pl-2">15 mins</p>
+                            </div>
+                        </div>
+    
+                        <div class="h-[80px] border rounded-md flex space-x-5 p-2">
+                            <div class="h-full w-[100px] bg-black rounded-md border border-black"></div>
+                            <div class="md:w-[75%] flex-col space-y-1">
+                                <p class="font-semibold md:text-white text-sm font-mono">This is a video</p>
+                                <p class="font-semibold bg-black rounded-md text-blue-600 text-sm md:w-[30%] pl-2">15 mins</p>
+                            </div>
+                        </div>
+    
+                        <div class="h-[80px] border rounded-md flex space-x-5 p-2">
+                            <div class="h-full w-[100px] bg-black rounded-md border border-black"></div>
+                            <div class="md:w-[75%] flex-col space-y-1">
+                                <p class="font-semibold md:text-white text-sm font-mono">This is a video</p>
+                                <p class="font-semibold bg-black rounded-md text-blue-600 text-sm md:w-[30%] pl-2">15 mins</p>
+                            </div>
+                        </div>
+    
+         
+                    </div>
+                </div>
             </div>
         </div>
       </div>
